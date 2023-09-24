@@ -7,6 +7,19 @@
     <title>Health Hustler</title>
 </head>
 <body>
+    <script>
+        function checkScreenWidth() {
+            if (window.innerWidth < 800) {
+                alert("This website is currently not suitable for mobile devices.");
+            }
+        }
+
+        // Attach the checkScreenWidth function to the window's resize event
+        window.addEventListener("resize", checkScreenWidth);
+
+        // Call the function initially to check the screen width
+        checkScreenWidth();
+    </script>
     <div class="mainrow">
         <div class="logo">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
